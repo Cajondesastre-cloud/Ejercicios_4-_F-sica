@@ -5,6 +5,14 @@ from astropy.io import fits
 import scipy
 from scipy.ndimage import filters
 
+# lim se usa para dar un estimación de la distancia entre dos puntos contiguos o cercanos
+# cuando se tiene un pico. De manera que será mayor cuanto más intenso sea el mismo y mayor
+# flujo haya en el espectro.
+
+# pw viene de peak wide, y de una idea del ancho promedio de los picos, de manera que se desprecian
+# picos de amplitud menor. Esto es importante, puesto que dependiendo del espectro, la amplitud de 
+# los mismos variará.
+
 def iden(star, lines,labels, lim, pw):      # Para absorción.
     ident = []
     index_list = []
