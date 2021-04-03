@@ -1,0 +1,3 @@
+Es necesario descargar todos los ficheros en una misma carpeta, de otro modo el programa en python dará errores.
+Si se quiere trabajar con los archivos en otros directorios se tendrá que modificar el programa .py espeficifando
+el nombre del fichero así como el directorio en el que se encuentre.
